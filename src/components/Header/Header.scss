@@ -1,0 +1,39 @@
+@use '../../style/variables.scss' as v;
+
+.header {
+  background-color: v.$color;
+  color: v.$color-light;
+  text-align: center;
+  padding: 1.5rem;
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  &__amout {
+    font-size: 1.3rem;
+  }
+
+  &__input{
+
+      font-size: 20px;
+      padding: 7px 8px;
+      width: 60%;
+      outline: none;
+      background: #FFFFFF;
+      color: #27374D;
+      border: 1px solid #27374D;
+      border-radius: 15px;
+      box-shadow: 4px 6px 15px -4px #4D4D4D;
+      transition: .3s ease;
+      margin-right: 10px;
+    
+      &__input:focus {
+        background: #27374D;
+        border: 1px solid #FFFFFF;
+        border-radius: 10px;
+      }
+}
+
+}

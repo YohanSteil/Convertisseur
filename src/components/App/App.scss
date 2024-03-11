@@ -1,0 +1,15 @@
+@use '../../style/variables.scss' as v;
+
+#root{
+  background-color: v.$color-alt;
+}
+.App {
+  height: calc(100vh - 2rem);
+  height: calc(100dvh - 2rem);
+  width: 40rem;
+  margin: auto;
+  background-color: v.$color-light;
+
+  display: flex;
+  flex-direction: column;
+}

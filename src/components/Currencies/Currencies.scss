@@ -1,0 +1,51 @@
+@use '../../style/variables.scss' as v;
+
+.currencies {
+  // Si le contenu est trop grand, cela rajoute une barre de scroll
+  overflow-y: auto;
+
+  // L'élément de mon currencies est en display flex
+  // Je peux dire à un élément de s'agrandir pour prendre plus de place que les autres
+  flex-grow: 1;
+
+  &__title {
+    padding: 0.8rem;
+    font-weight: 700;
+    color: v.$color-alt;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    border-top: 1px solid v.$color-alt;
+    color: v.$color-alt;
+    font-size: 1.5rem;
+    transition: background-color v.$delay-slow;
+
+    &:hover {
+      background-color: v.$color-alt;
+      color: white;
+      transition: background-color v.$delay-fast;
+    }
+
+    &-btn {
+      padding: 1rem 1rem;
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      color: black;
+      text-align: left;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.currencies__item-btn:hover{
+  color: white;
+  border-left: 1px solid white;
+}
