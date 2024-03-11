@@ -1,0 +1,21 @@
+@use '../../style/variables.scss' as v;
+
+.amount {
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px  solid v.$color-alt;
+  
+    &__value {
+      font-weight: 700;
+      font-size: 2rem;
+      margin: 1rem;
+      color: v.$color-alt;
+    }
+  
+    &__currency {
+      font-size: 1.3rem;
+      margin: 0;
+      color: v.$color-alt;
+    }
+  }
+  
